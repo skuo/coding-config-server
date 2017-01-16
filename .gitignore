@@ -1,2 +1,11 @@
+*.pid
+*.log*
+*~
+*.pyc
+*.DS_Store
+.pydevproject
+.gradle
+
 /.gradle/
 /build/
+

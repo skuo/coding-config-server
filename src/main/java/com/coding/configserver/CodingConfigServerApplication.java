@@ -22,17 +22,6 @@ public class CodingConfigServerApplication {
     }
     
     @Bean
-    // Group all REST endpoint with '/bids' prefix in the same docket
-    public Docket bidsApi() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("bids")
-                .apiInfo(apiInfo())
-                .select()
-                .paths(regex("/bids.*"))
-                .build();
-    }
-
-    @Bean
     // Group all REST endpoint with '/hola' prefix in the same docket
     public Docket holaApi() {
         return new Docket(DocumentationType.SWAGGER_2)
