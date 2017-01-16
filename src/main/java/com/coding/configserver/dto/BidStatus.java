@@ -1,4 +1,4 @@
-package com.coding.dto;
+package com.coding.configserver.dto;
 
 public class BidStatus {
     public static final String SUCCESS = "success";

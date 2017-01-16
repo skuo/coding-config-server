@@ -1,4 +1,4 @@
-package com.coding.entity;
+package com.coding.configserver.entity;
 
 import java.math.BigDecimal;
 import java.sql.Timestamp;
@@ -11,7 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.coding.dto.BidDto;
+import com.coding.configserver.dto.BidDto;
 
 @Entity
 @Table(name="bid")

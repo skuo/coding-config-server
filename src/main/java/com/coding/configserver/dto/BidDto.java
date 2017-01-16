@@ -1,8 +1,8 @@
-package com.coding.dto;
+package com.coding.configserver.dto;
 
 import java.math.BigDecimal;
 
-import com.coding.entity.Bid;
+import com.coding.configserver.entity.Bid;
 
 public class BidDto {
     private Long id;

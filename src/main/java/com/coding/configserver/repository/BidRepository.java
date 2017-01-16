@@ -1,4 +1,4 @@
-package com.coding.repository;
+package com.coding.configserver.repository;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.query.Param;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
-import com.coding.entity.Bid;
+import com.coding.configserver.entity.Bid;
 
 @RepositoryRestResource(exported=false)
 public interface BidRepository extends CrudRepository<Bid,Long> {

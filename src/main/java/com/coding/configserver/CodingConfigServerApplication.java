@@ -1,4 +1,4 @@
-package com.coding;
+package com.coding.configserver;
 
 import static springfox.documentation.builders.PathSelectors.regex;
 
@@ -15,10 +15,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
-public class CodingApplication { 
+public class CodingConfigServerApplication { 
 
     public static void main(String[] args) {
-        SpringApplication.run(CodingApplication.class, args);
+        SpringApplication.run(CodingConfigServerApplication.class, args);
     }
     
     @Bean
@@ -48,9 +48,9 @@ public class CodingApplication {
                 .title("Spring Boot REST API with Swagger")
                 .description("Spring Boot REST API with Swagger")
                 .termsOfServiceUrl("http://com.coding")
-                .contact(new Contact("Steve Kuo","http://com.coding/skuo","skuo@coding.com"))
+                .contact(new Contact("Steve Kuo","http://com.coding-config-server/skuo","skuo@coding.com"))
                 .license("Apache License Version 2.0")
-                .licenseUrl("https://githuh.com")
+                .licenseUrl("https://github.com")
                 .version("2.0")
                 .build();
     }

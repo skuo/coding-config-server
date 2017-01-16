@@ -1,4 +1,4 @@
-package com.coding.rest;
+package com.coding.configserver.rest;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;

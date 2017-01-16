@@ -1,4 +1,4 @@
-package com.coding.rest;
+package com.coding.configserver.rest;
 
 import static org.junit.Assert.assertEquals;
 

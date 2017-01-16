@@ -1,4 +1,4 @@
-package com.coding.service;
+package com.coding.configserver.service;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -8,9 +8,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.coding.dto.BidDto;
-import com.coding.entity.Bid;
-import com.coding.repository.BidRepository;
+import com.coding.configserver.dto.BidDto;
+import com.coding.configserver.entity.Bid;
+import com.coding.configserver.repository.BidRepository;
 
 @Service
 public class BidService {

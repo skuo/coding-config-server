@@ -1,4 +1,4 @@
-package com.coding.rest;
+package com.coding.configserver.rest;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -19,9 +19,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.coding.dto.BidDto;
-import com.coding.dto.BidStatus;
-import com.coding.service.BidService;
+import com.coding.configserver.dto.BidDto;
+import com.coding.configserver.dto.BidStatus;
+import com.coding.configserver.service.BidService;
 
 import io.swagger.annotations.ApiOperation;
 
