@@ -1,0 +1,5 @@
+/application-dev.properties
+/application-test.properties
+/application.properties
+/com/
+/logback-spring.xml
