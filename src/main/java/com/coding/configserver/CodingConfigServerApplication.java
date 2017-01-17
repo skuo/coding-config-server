@@ -4,6 +4,7 @@ import static springfox.documentation.builders.PathSelectors.regex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.context.annotation.Bean;
 
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -15,6 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @SpringBootApplication
+@EnableConfigServer
 public class CodingConfigServerApplication { 
 
     public static void main(String[] args) {

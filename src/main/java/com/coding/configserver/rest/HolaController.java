@@ -28,6 +28,7 @@ public class HolaController {
         }
         String jsonStr = 
                 "{"
+                + "\"java.version\":\"" + System.getProperty("java.version") + "\"" + ","
                 + "\"hostname\":\"" +  hostname + "\"" + ","
                 + "\"suggestion\":\"try git bootRun --debug-jvm\""
                 + "}";
