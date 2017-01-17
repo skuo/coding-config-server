@@ -1,15 +1,12 @@
 buildscript {
   ext {
     springBootVersion = '1.4.3.RELEASE'
-    springCloudDependenciesVersion = 'Camden.SR4'  // list compatible jars
-    springCloudVersion = '1.2.2.RELEASE'
   }
   repositories {
     mavenCentral()
   }
   dependencies {
     classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    classpath("org.springframework.cloud:spring-cloud-dependencies:${springCloudDependenciesVersion}")
     classpath('se.transmode.gradle:gradle-docker:1.2')
   }
 }
@@ -44,21 +41,14 @@ springBoot {
   buildInfo()
 }   
 
+dependencyManagement {
+    imports {
+    mavenBom "org.springframework.cloud:spring-cloud-dependencies:Brixton.SR5"
+    }
+}
+
 dependencies {
-  compile('org.springframework.boot:spring-boot-starter-data-rest')
-  compile('org.springframework.boot:spring-boot-starter-security')
-  compile("org.springframework.boot:spring-boot-starter-actuator")
-  compile('org.springframework.security:spring-security-test:4.1.3.RELEASE')
-  compile('org.springframework.boot:spring-boot-starter-web')
-  compile("org.springframework.boot:spring-boot-devtools")
-
-  compile("org.springframework.cloud:spring-cloud-config-server:${springCloudVersion}")
-  compile("org.springframework.cloud:spring-cloud-starter-config:${springCloudVersion}")
-
-  compile('io.springfox:springfox-swagger-ui:2.6.1')
-  compile('io.springfox:springfox-swagger2:2.6.1')
-
-  runtime('mysql:mysql-connector-java')
+  compile('org.springframework.cloud:spring-cloud-config-server')
 	
   testCompile('org.springframework.boot:spring-boot-starter-test')
 
