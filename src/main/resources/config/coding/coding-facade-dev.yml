@@ -1,1 +1,3 @@
 example.property: "I AM A DEV OVERRIDE FOR CODING FACADE"
+coding.service.username: "user"
+coding.service.password: "CodingBreak"
