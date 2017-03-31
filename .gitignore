@@ -5,6 +5,7 @@
 *.DS_Store
 .pydevproject
 .gradle
+.project
 
 /.gradle/
 /build/
